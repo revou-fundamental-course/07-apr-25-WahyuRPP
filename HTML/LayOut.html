@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latian LayOuting</title>
+    <style>
+        .container {
+            border: spx solid #1a1304;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .container>div {
+            padding: 10px;
+            text-align: center;
+            font-size: 14sp;
+            color: #fbff08;
+            border: 2px solid;
+            background-color: green;
+        }
+
+        .content {
+            flex-direction: row;
+            display: flex
+        }
+
+        .content>div {
+            style="display: flex; 
+ flex: 1;
+            align-content: center;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="container">
+        <img src="https://imgs.search.brave.com/51sueN5kAnrzEi0LIJVUTr_DPtc383FF6MHQijf6Iw8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvcHJl/dmlld3MvMDE4Lzkz/MC81NzIvbm9uXzJ4/L3lvdXR1YmUtbG9n/by15b3V0dWJlLWlj/b24tdHJhbnNwYXJl/bnQtZnJlZS1wbmcu/cG5n.png"
+            width: 40px; height: 40px;">
+
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="Logout">Log Out</div>
+    </nav>
+    <header>
+        <h2>Form Belajar</h2>
+        <p>ini adlah website latihan pertama</p>
+    </header><br>
+    <main class="content">
+        <div>
+            <form action="method=post">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="tanggal"> Tanggal Lahir:</label>
+                <input type="date" id="tanggal" name="tanggal"><br>
+                <label for="jenis kelamin">Jenis Kelamin:</label>
+                <input type="radio" id="laki-laki" name="jenis kelamin" value="laki-laki">
+                <label for="laki-laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenis kelamin" value="perempuan">
+                <label for="perempuan">Perempuan</label>
+                <br>
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Submit" width="4" height="50">
+            </form>
+        </div>
+        <div>
+
+            <table-border=solid black>
+                <div>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Tanggal Lahir</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Pesan</th>
+                        <th>Profile</th>
+                        <th>Hapus</th>
+                    </tr>
+                </div>
+                <div>
+                    <td>Rizqi</td>
+                    <td>17 Mei 1945</td>
+                    <td>Laki-laki</td>
+                    <td>Jangan Cepu</td>
+                    <td><a href="#">Klick Di Sini</a> </td>
+                    <td>Gambar</td>
+                </div>
+                <div>
+                    <tr>>
+                        <td>Ibra</td>
+                        <td>10 Juni 1933</td>
+                        <td>Laki-laki</td>
+                        <td>Hello word</td>
+                        <td><a href="#">Klick Di Sini</a> </td>
+                        <td>Gambar</td>
+                    </tr>
+                </div>
+                <div>
+                    <td>Reva</td>
+                    <td>& Juli 1969</td>
+                    <td>Perempuan</td>
+                    <td>Belajar Terus</td>
+                    <td><a href="#">Klick Di Sini</a> </td>
+                    <td>Gambar</td>
+                </div>
+                <div>
+                    <tr>
+                        <td>Raymon</td>
+                        <td>19 April 1988</td>
+                        <td>Laki-laki</td>
+                        <td>Buta apa ga</td>
+                        <td><a href="#">Klick Di Sini</a> </td>
+                        <td>Gambar</td>
+                    </tr>
+            </table>
+        </div>
+    </main>
+
+</body>
+
+</html>

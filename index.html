@@ -1,11 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- CSS conect -->
+    <link rel="stylesheet" href="css\style.css">
+    <!-- Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    
+    <header>
+
+        <!-- Navigation -->
+
+        <nav class="navbar">
+            <img src="company_icon.png" alt="Logo" class="logo" width="50">
+            <div class="navbar-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#profil">Profil</a>
+                <a href="#message">Message Us</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="wrapper">
+                    <img src="img\nuno-marques-Az0Ed9t8hpk-unsplash.jpg">
+                    <img src="img\federico-beccari-ahi73ZN5P0Y-unsplash.jpg">
+                    <img src="img\american-public-power-association-513dBrMJ_5w-unsplash.jpg">
+                    <img src="img\rob-lambert-9Q_pLLP_jmA-unsplash.jpg">
+                </div>
+            </div>
+            <div class="banner-text">
+
+                <h1>Hi <span id="name">Luffy</span>, Welcome to Our Website Company</h1>
+                <p>We are dedicated to providing the best services for our clients.</p><br>
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h1>About Us</h1>
+            <div class="about-flex">
+                <div class="about-img">
+                    <img src="img\riccardo-annandale-7e2pe9wjL9M-unsplash.jpg" alt="About Us">
+                </div>
+
+                <div class="content">
+                    <h2>PT Alamak Resources Indonesia Tbk</h2><br>
+                    <p>PT Alamak Resources Indonesia Tbk previously known as PT Afro Energy Indonesia Tbk, this
+                        company
+                        focuses on metallurgical coal mining, mineral processing, mining services, and renewable energy
+                        businesses. It envisions becoming a leading Indonesian mining and energy group. Through its
+                        subsidiaries, PT Alamak Resources Indonesia Tbk is committed to achieving sustainable long-term
+                        growth</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profil Section -->
+
+        <section class="profil" id="profil">
+            <div class="profil-section">
+                <img src="img\karsten-wurth-0w-uTa0Xz7w-unsplash.jpg" alt="Profil">
+            </div>
+            <div class="profil-content">
+                <h2>Our Vision</h2>
+                <p>To be a leading Indonesia mining and energy group</p>
+                <br>
+                <h2>Our Mission</h2>
+                <ol>
+                    <li>Satisfy our customers</li>
+                    <li>Develop or people</li>
+                    <li>Support Comunity and national development</li>
+                    <li>Promote a safe sustainable environment</li>
+                    <li>Maximize share holder value</li>
+                </ol>
+            </div>
+        </section>
+        <hr>
+        <!-- Message Section-->
+
+        <section class="message" id="message">
+            <h1>Message Us</h1>
+            <div class="akhir">
+                <form name="message-form"  class="message-form" onsubmit="return validateForm()">
+                    <label for="nama">Nama :</label><br>
+                    <input type="text" name="full-name" id="name" placeholder="Enter your name" required>
+                    <br>
+                    <label for="tanggal-lahir">Tanggal Lahir :</label><br>
+                    <input type="date" name="tanggal-lahir" id="tanggal" placeholder="Enter your date" required>
+                    <br>
+                    <label for="jenis-kelamin">Jenis Kelamin :</label><br>
+
+                    <input type="radio" name="gender" id="laki-laki"value="Laki-laki" required>
+                    <label for="laki-laki">Laki-laki</label>
+                    <input type="radio" name="gender" id="perempuan" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                    <br>
+                    <label for="pesan">Pesan :</label>
+                    <br><textarea name="pesan" id="pesan" cols="30" rows="10" placeholder="Enter your message"
+                        required></textarea>
+                    <br>
+                    <button type="submit" id="submit" value="submit">Submit</button>
+
+                </form>
+            </div>
+            <div class="output">
+                <h2>Result</h2>
+                <p>Nama : <span id="output-name"></span></p>
+                <p>Tanggal : <span id="output-tanggal"></span></p>
+                <p>Jenis-kelamin : <span id="output-gender"></span></p>
+                <p>Pesan : <span id="output-pesan"></span></p>
+            </div>
+
+        </section>
+        <hr>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-footer">
+            <p class="coopyright-text">© 2024 Company Energy</p>
+        </div>
+        <div class="social-icons">
+            <a href="#" id="instagram"><i data-feather="instagram"></i></a>
+            <a href="#" id="twitter"><i data-feather="twitter"></i></a>
+            <a href="#" id="facebook"><i data-feather="facebook"></i></a>
+        </div>
+        <p class="policy">
+            <a href="#" class="policy-link">Privacy Policy •</a>
+            <a href="#" class="policy-link">Terms of Service</a>
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <!-- Feather Icons -->
+    <script>
+        feather.replace();
+    </script>
 </body>
+
 </html>

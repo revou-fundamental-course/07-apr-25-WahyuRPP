@@ -1,0 +1,26 @@
+.container {
+    border: spx solid #1a1304;
+    display: flex;
+    justify-content: flex-end; /* try to change this to center for example */
+}
+
+.container>div {
+    padding: 10px;
+    text-align: center;
+    font-size: 14sp;
+    color: #fbff08;
+    border: 2px solid;
+    background-color: green;
+}
+
+.content {
+    flex-direction: row;
+    display: flex
+}
+
+.content>div {
+    style="display: flex; 
+ flex: 1;
+    align-content: center;
+    justify-content: center;
+}
